@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>JavaScript Loops</h3>
+
+<p id="demo4"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("demo4").innerHTML = text;
+</script>
+<br>
+
+<h3>JavaScript Functions</h3>
+
+<p>This example calls a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+    return a * b;
+}
+</script>
+
+<br>
+
+<h3>JavaScript Conditional Statements</h3>
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="demo3">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+    document.getElementById("demo3").innerHTML = "Good day!";
+}
+
+else{
+
+</script>
+
+<br>
+
+​<h3>JavaScript Variables</h3>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo5"></p>
+
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo5").innerHTML =
+"The value of z is: " + z;
+</script>
+
+</body>
+</html>
