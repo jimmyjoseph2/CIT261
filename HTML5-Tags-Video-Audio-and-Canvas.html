@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <h4>
+      CIT-261 Examples :Tags - Video, Audio, and Canvas
+    </h4>
+  </head>
+
+<video width="320" height="240" controls>
+  <source src="https://cdn.glitch.com/646937ae-f357-41e7-a07d-ced76c87f5f0%2FCGI%203D%20Animated%20Short%20Radiance%20%20-%20by%20Linda%20Li.mp4?1541076926265" type="video/mp4">
+  <source src="https://youtu.be/q5jEY92Amgw" type="video/mp4">
+  <source src="https://cdn.glitch.com/646937ae-f357-41e7-a07d-ced76c87f5f0%2FCGI%203D%20Animated%20Short%20Radiance%20%20-%20by%20Linda%20Li.mp4?1541076926265" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<audio controls>
+  <source src="https://cdn.glitch.com/646937ae-f357-41e7-a07d-ced76c87f5f0%2FKalimba.mp3?1541076404023" type="audio/ogg">
+  <source src="https://cdn.glitch.com/646937ae-f357-41e7-a07d-ced76c87f5f0%2FKalimba.mp3?1541076404023" type="audio/mpeg">
+  
+</audio>
+
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.shadowBlur = 20;
+ctx.fillStyle = "red";
+
+ctx.shadowColor = "black";
+ctx.fillRect(20, 20, 100, 80);
+
+ctx.shadowColor = "blue";
+ctx.fillRect(140, 20, 100, 80);
+
+</script>
+
+
+</body>
+</html>
