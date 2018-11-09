@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <h3>
+   This example is for touch devices only.
+
+  </h3>
+
+<p id="myP">Touch this paragraph to trigger a function that will write "CIT 261".</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myP").ontouchstart = myFunction;
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "CIT261";
+}
+</script>
+
+</body>
+</html>
