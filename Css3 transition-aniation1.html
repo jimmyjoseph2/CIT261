@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+div#box1 {
+    background: #9DCEFF;
+    Width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: -400px;
+ }
+</style>
+<script>
+function slideIn(el){
+var elem = document.getElementById(el);
+elem.style.transition = "left 1.0s linear 0s";
+elem.style.left = "0px";
+}
+function slideOut(el){
+var elem = document.getElementById(el);
+elem.style.transition = "left 1.0s linear 0s";
+elem.style.left = "-400px";
+}
+</script>
+</head>
+<body>
+
+<h3> Click the button to slide in or slide out</h3>
+ <button onclick="slideIn('box1');">slide in</button>
+ <button onclick="slideOut('box1');">slide out</button>
+ 
+ <div id="box1">Click the buton to slide in or slide out</div>
+</body>
+</html>

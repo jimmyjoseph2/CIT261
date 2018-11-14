@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+div#box1 {
+    background: #9DCEFF;
+    Width: 400px;
+    height: 200px;
+  
+ }
+</style>
+<script>
+function fadeOut(el){
+var elem = document.getElementById(el);
+elem.style.transition = "opacity 1.3s linear 1s";
+elem.style.opacity = "0";
+}
+function fadeIn(el){
+var elem = document.getElementById(el);
+elem.style.transition = "opacity 1.2s linear 1s";
+elem.style.opacity = "1";
+}
+</script>
+</head>
+<body>
+
+<h3> Click the button </h3>
+ <button onclick="fadeOut('box1');">fade out</button>
+ <button onclick="fadeIn('box1');">fade in</button>
+ 
+ <div id="box1">Click the buton to fade in or fade out</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+div#box1 {
+    background: #9DCEFF;
+    Width: 400px;
+    height: 200px;
+    {
+</style>
+<script>
+function Colorbackgroung(el,clr){
+var elem = document.getElementById(el);
+elem.style.transition = "background 1.0s linear 0s";
+elem.style.background = clr;
+
+}
+</script>
+
+<br>
+
+</head>
+<body>
+
+ <button onclick="Colorbackgroung('box1' , '#F0F');">Magenta</button>
+ <button onclick="Colorbackgroung('box1' , '#0C0');">Green</button>
+ <button onclick="Colorbackgroung('box1' , '#FFFF00');">Yellow</button>
+ <button onclick="Colorbackgroung('box1' , '#9DCEFF');">Original</button>
+ <div id="box1">Click each buton to change the background color </div>
+</body>
+</html>
