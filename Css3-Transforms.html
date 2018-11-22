@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+    margin: auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<p>Click the "Try it" button to rotate the DIV element:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+  <h1> Transforms </h1>
+</div>
+
+<script>
+function myFunction() {
+   
+    
+    document.getElementById("myDIV").style.transform = "rotate(90deg)"; 
+}
+</script>
+
+ 
+
+</body>
+</html>
