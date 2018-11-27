@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>JSON stringify</h3>
+
+<p id="demo1"></p>
+
+<script>
+var obj = { name: "John", age: 30, city: "New York" };
+var myJSON = JSON.stringify(obj);
+document.getElementById("demo1").innerHTML = myJSON;
+</script>
+
+<br> <br>
+
+<h3>JSON  parse</h3>
+
+<p id="demo"></p>
+
+<script>
+var txt = '{"name":"John", "age":30, "city":"New York"}'
+var obj = JSON.parse(txt);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+</script>
+
+</body>
+</html>

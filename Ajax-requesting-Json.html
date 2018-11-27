@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="id01"></div>
+<script>
+var myArray = [
+{
+"display": "jQuery.getJSON Tutorial",
+"url": "https://api.jquery.com/jquery.getjson/"
+},
+
+{
+"display": "HTML Tutorial",
+"url": " https://html.com/"
+},
+
+{
+"display": "CSS Tutorial",
+"url": "https://www.csstutorial.net/"
+},
+{
+"display": "Web developer tutorial",
+"url": " https://webplatform.github.io/docs/Beginners/"
+},
+ 
+ {
+"display": "coding for beginners",
+"url": " https://www.javascript.com/"
+},
+ 
+];
+
+myFunction(myArray);
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
