@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Fluency Evidence: AJAX </h2>
+  
+  <p>The XMLHttpRequest Object</p>
+    
+  <div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").textContent =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://cdn.glitch.com/886e9208-63d7-4ab7-b3fb-df96b1aed0af%2Fbooks.txt?1545171623460", true);
+  xhttp.send();
+  }
+</script>
+</body>
+</html>
